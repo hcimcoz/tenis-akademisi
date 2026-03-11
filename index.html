@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenis Akademisi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <span class="logo-icon">🎾</span>
+        <span>Tenis Akademisi</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" data-i18n="nav.home">Ana Sayfa</a></li>
+        <li><a href="#courses" data-i18n="nav.courses">Kurslar</a></li>
+        <li><a href="#coaches" data-i18n="nav.coaches">Eğitmenler</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Video Galeri</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+        <li>
+          <div class="lang-toggle">
+            <button class="lang-btn active" id="lang-tr">TR</button>
+            <button class="lang-btn" id="lang-en">EN</button>
+          </div>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 data-i18n="hero.title">Tenis Akademisi</h1>
+      <p data-i18n="hero.subtitle">Profesyonel eğitmenlerle tenis öğrenin, gelişin ve kazanın.</p>
+      <a href="#courses" class="btn-primary" data-i18n="hero.cta">Hemen Başla</a>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 data-i18n="courses.title">Kurslarımız</h2>
+        <p data-i18n="courses.subtitle">Her seviyeye uygun eğitim programları</p>
+      </div>
+      <div class="courses-grid">
+        <div class="course-card fade-in">
+          <div class="course-icon">🏸</div>
+          <h3 data-i18n="courses.beginner.title">Başlangıç Seviye</h3>
+          <p data-i18n="courses.beginner.desc">Tenise ilk adımınızı atın. Temel vuruşlar, kort kuralları ve oyun mantığını öğrenin.</p>
+          <div class="course-price" data-i18n="courses.beginner.price">₺800 / Ay</div>
+          <button class="btn-outline" data-i18n="courses.detail">Detay</button>
+        </div>
+        <div class="course-card fade-in">
+          <div class="course-icon">🎾</div>
+          <h3 data-i18n="courses.intermediate.title">Orta Seviye</h3>
+          <p data-i18n="courses.intermediate.desc">Tekniğinizi geliştirin. Taktik oyun, servis geliştirme ve maç stratejileri.</p>
+          <div class="course-price" data-i18n="courses.intermediate.price">₺1.200 / Ay</div>
+          <button class="btn-outline" data-i18n="courses.detail">Detay</button>
+        </div>
+        <div class="course-card fade-in">
+          <div class="course-icon">🏆</div>
+          <h3 data-i18n="courses.advanced.title">İleri Seviye</h3>
+          <p data-i18n="courses.advanced.desc">Turnuva hazırlığı. Yoğun antrenman, mental koçluk ve performans analizi.</p>
+          <div class="course-price" data-i18n="courses.advanced.price">₺1.800 / Ay</div>
+          <button class="btn-outline" data-i18n="courses.detail">Detay</button>
+        </div>
+        <div class="course-card fade-in">
+          <div class="course-icon">⭐</div>
+          <h3 data-i18n="courses.private.title">Özel Ders</h3>
+          <p data-i18n="courses.private.desc">Birebir eğitim ile kişisel gelişiminize odaklanın. Esnek saat ve program.</p>
+          <div class="course-price" data-i18n="courses.private.price">₺500 / Seans</div>
+          <button class="btn-outline" data-i18n="courses.detail">Detay</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHES -->
+  <section class="section coaches" id="coaches">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 data-i18n="coaches.title">Eğitmenlerimiz</h2>
+        <p data-i18n="coaches.subtitle">Deneyimli ve sertifikalı tenis eğitmenleri</p>
+      </div>
+      <div class="coaches-grid">
+        <div class="coach-card fade-in">
+          <div class="coach-avatar">👨‍🏫</div>
+          <h3 data-i18n="coaches.coach1.name">Ahmet Yılmaz</h3>
+          <div class="coach-specialty" data-i18n="coaches.coach1.specialty">Başlangıç & Orta Seviye</div>
+          <div class="coach-experience" data-i18n="coaches.coach1.experience">15 yıl deneyim</div>
+          <p class="coach-bio" data-i18n="coaches.coach1.bio">ITF sertifikalı eğitmen. Yüzlerce öğrenciye tenis sevgisi aşıladı.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="Twitter">tw</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+        <div class="coach-card fade-in">
+          <div class="coach-avatar">👩‍🏫</div>
+          <h3 data-i18n="coaches.coach2.name">Elif Demir</h3>
+          <div class="coach-specialty" data-i18n="coaches.coach2.specialty">İleri Seviye & Turnuva</div>
+          <div class="coach-experience" data-i18n="coaches.coach2.experience">12 yıl deneyim</div>
+          <p class="coach-bio" data-i18n="coaches.coach2.bio">Eski milli sporcu. Genç yetenekleri turnuvalara hazırlıyor.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="Twitter">tw</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+        <div class="coach-card fade-in">
+          <div class="coach-avatar">🏋️</div>
+          <h3 data-i18n="coaches.coach3.name">Can Özkan</h3>
+          <div class="coach-specialty" data-i18n="coaches.coach3.specialty">Özel Ders & Fitness</div>
+          <div class="coach-experience" data-i18n="coaches.coach3.experience">10 yıl deneyim</div>
+          <p class="coach-bio" data-i18n="coaches.coach3.bio">Kişisel antrenman ve fiziksel kondisyon uzmanı.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="Twitter">tw</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 data-i18n="gallery.title">Video Galeri</h2>
+        <p data-i18n="gallery.subtitle">Teknik videolar ve antrenman görüntüleri</p>
+      </div>
+      <div class="filter-bar fade-in">
+        <button class="filter-btn active" data-filter="all" data-i18n="gallery.filter.all">Tümü</button>
+        <button class="filter-btn" data-filter="technique" data-i18n="gallery.filter.technique">Teknik</button>
+        <button class="filter-btn" data-filter="match" data-i18n="gallery.filter.match">Maç</button>
+        <button class="filter-btn" data-filter="training" data-i18n="gallery.filter.training">Antrenman</button>
+      </div>
+      <div class="gallery-grid">
+        <div class="video-card fade-in" data-category="technique">
+          <div class="video-thumbnail">
+            <div class="video-thumbnail-bg technique">🎾</div>
+            <button class="video-play-btn" data-i18n="gallery.play">▶ İzle</button>
+          </div>
+          <div class="video-info">
+            <h4 data-i18n="gallery.video1.title">Forehand Tekniği</h4>
+          </div>
+        </div>
+        <div class="video-card fade-in" data-category="technique">
+          <div class="video-thumbnail">
+            <div class="video-thumbnail-bg technique">🏸</div>
+            <button class="video-play-btn" data-i18n="gallery.play">▶ İzle</button>
+          </div>
+          <div class="video-info">
+            <h4 data-i18n="gallery.video2.title">Backhand Temelleri</h4>
+          </div>
+        </div>
+        <div class="video-card fade-in" data-category="technique">
+          <div class="video-thumbnail">
+            <div class="video-thumbnail-bg technique">💪</div>
+            <button class="video-play-btn" data-i18n="gallery.play">▶ İzle</button>
+          </div>
+          <div class="video-info">
+            <h4 data-i18n="gallery.video3.title">Servis Atışı</h4>
+          </div>
+        </div>
+        <div class="video-card fade-in" data-category="match">
+          <div class="video-thumbnail">
+            <div class="video-thumbnail-bg match">🏆</div>
+            <button class="video-play-btn" data-i18n="gallery.play">▶ İzle</button>
+          </div>
+          <div class="video-info">
+            <h4 data-i18n="gallery.video4.title">Turnuva Maçı</h4>
+          </div>
+        </div>
+        <div class="video-card fade-in" data-category="training">
+          <div class="video-thumbnail">
+            <div class="video-thumbnail-bg training">🏋️</div>
+            <button class="video-play-btn" data-i18n="gallery.play">▶ İzle</button>
+          </div>
+          <div class="video-info">
+            <h4 data-i18n="gallery.video5.title">Kondisyon Antrenmanı</h4>
+          </div>
+        </div>
+        <div class="video-card fade-in" data-category="match">
+          <div class="video-thumbnail">
+            <div class="video-thumbnail-bg match">👥</div>
+            <button class="video-play-btn" data-i18n="gallery.play">▶ İzle</button>
+          </div>
+          <div class="video-info">
+            <h4 data-i18n="gallery.video6.title">Çiftler Maçı</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="video-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">Video</h3>
+        <button class="modal-close-btn" id="modal-close" data-i18n="gallery.modal.close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="play-icon">▶</div>
+        <p data-i18n="gallery.modal.placeholder">Video oynatıcı burada yer alacak.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 data-i18n="contact.title">İletişim & Randevu</h2>
+        <p data-i18n="contact.subtitle">Bizimle iletişime geçin veya deneme dersi için randevu alın</p>
+      </div>
+      <div class="contact-grid fade-in">
+        <div class="contact-info">
+          <h3 data-i18n="contact.info.title">İletişim Bilgileri</h3>
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <p data-i18n="contact.info.address">Atatürk Cad. No:42, Spor Kompleksi, İstanbul</p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <p data-i18n="contact.info.phone">+90 (212) 555 0 123</p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">✉️</span>
+            <p data-i18n="contact.info.email">info@tenisakademisi.com</p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕐</span>
+            <p data-i18n="contact.info.hours">Pazartesi - Cumartesi: 08:00 - 21:00</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="form-name" data-i18n="contact.form.name" placeholder="Adınız Soyadınız">
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" data-i18n="contact.form.email" placeholder="E-posta Adresiniz">
+          </div>
+          <div class="form-group">
+            <input type="tel" id="form-phone" data-i18n="contact.form.phone" placeholder="Telefon Numaranız">
+          </div>
+          <div class="form-group">
+            <select id="form-course">
+              <option value="" data-i18n="contact.form.course.select">Bir kurs seçin...</option>
+              <option value="beginner" data-i18n="contact.form.course.beginner">Başlangıç Seviye</option>
+              <option value="intermediate" data-i18n="contact.form.course.intermediate">Orta Seviye</option>
+              <option value="advanced" data-i18n="contact.form.course.advanced">İleri Seviye</option>
+              <option value="private" data-i18n="contact.form.course.private">Özel Ders</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" data-i18n="contact.form.message" placeholder="Mesajınız"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" data-i18n="contact.form.submit">Gönder</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">🎾</span>
+            <span>Tenis Akademisi</span>
+          </div>
+          <p data-i18n="footer.desc">Profesyonel tenis eğitimi ile potansiyelinizi keşfedin.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.links">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" data-i18n="nav.home">Ana Sayfa</a></li>
+            <li><a href="#courses" data-i18n="nav.courses">Kurslar</a></li>
+            <li><a href="#coaches" data-i18n="nav.coaches">Eğitmenler</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.social">Sosyal Medya</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2026 Tenis Akademisi. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
